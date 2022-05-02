@@ -33,3 +33,6 @@ com.sun.jna.platform.win32.Win32Exception: The system cannot find the file speci
 
 !ENTRY org.eclipse.cdt.core 1 0 2022-05-02 21:03:50.867
 !MESSAGE Indexed 'Led_Blink' (19 sources, 78 headers) in 3.16 sec: 3,632 declarations; 13,058 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.012%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-05-02 21:08:42.247
+!MESSAGE Indexed 'Led_Traffic' (19 sources, 78 headers) in 1.66 sec: 3,632 declarations; 13,058 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.012%)
