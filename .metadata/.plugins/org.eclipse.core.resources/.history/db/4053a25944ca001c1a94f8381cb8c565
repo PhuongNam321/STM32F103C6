@@ -90,37 +90,28 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  enum status_Led{Led_Red, Led_Yellow, Led_Green};
+  enum status_Led{Led_Red, Led_Yellow};
   enum status_Led Led = Led_Red;
-  int counter = 0;
+  int counter = 400;
   while (1)
   {
-	  counter++;
+	  counter--;
 	  switch(Led){
 	  case Led_Red:
 		  HAL_GPIO_WritePin(GPIOA, LED_RED_Pin, GPIO_PIN_RESET);
 		  HAL_GPIO_WritePin(GPIOA, LED_YELLOW_Pin, GPIO_PIN_SET);
-		  HAL_GPIO_WritePin(GPIOA, LED_GREEN_Pin, GPIO_PIN_SET);
-		  if(counter >= 200){
+		  if(counter <= 200){
 			  Led = Led_Yellow;
 		  }
 		  break;
 	  case Led_Yellow:
 		  HAL_GPIO_WritePin(GPIOA, LED_RED_Pin, GPIO_PIN_SET);
 		  HAL_GPIO_WritePin(GPIOA, LED_YELLOW_Pin, GPIO_PIN_RESET);
-		  HAL_GPIO_WritePin(GPIOA, LED_GREEN_Pin, GPIO_PIN_SET);
-		  if(counter >= 500){
-			  Led = Led_Green;
+		  if(counter <= 0){
+			  Led = Led_Red;
+			  counter = 400;
 		  }
 		  break;
-	  case Led_Green:
-		  HAL_GPIO_WritePin(GPIOA, LED_RED_Pin, GPIO_PIN_SET);
-		  HAL_GPIO_WritePin(GPIOA, LED_YELLOW_Pin, GPIO_PIN_SET);
-		  HAL_GPIO_WritePin(GPIOA, LED_GREEN_Pin, GPIO_PIN_RESET);
-		  if(counter >= 800){
-			  Led = Led_Red;
-			  counter = 0;
-		  }
 	  }
 	  HAL_Delay(10);
     /* USER CODE END WHILE */
