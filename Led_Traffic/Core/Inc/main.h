@@ -7,12 +7,13 @@
   ******************************************************************************
   * @attention
   *
-  * Copyright (c) 2022 STMicroelectronics.
-  * All rights reserved.
+  * <h2><center>&copy; Copyright (c) 2021 STMicroelectronics.
+  * All rights reserved.</center></h2>
   *
-  * This software is licensed under terms that can be found in the LICENSE file
-  * in the root directory of this software component.
-  * If no LICENSE file comes with this software, it is provided AS-IS.
+  * This software component is licensed by ST under BSD 3-Clause license,
+  * the "License"; You may not use this file except in compliance with the
+  * License. You may obtain a copy of the License at:
+  *                        opensource.org/licenses/BSD-3-Clause
   *
   ******************************************************************************
   */
@@ -57,18 +58,18 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define LED_RED_1_Pin GPIO_PIN_2
-#define LED_RED_1_GPIO_Port GPIOA
-#define LED_YELLOW_1_Pin GPIO_PIN_3
-#define LED_YELLOW_1_GPIO_Port GPIOA
-#define LED_GREEN_1_Pin GPIO_PIN_4
-#define LED_GREEN_1_GPIO_Port GPIOA
-#define LED_RED_2_Pin GPIO_PIN_5
-#define LED_RED_2_GPIO_Port GPIOA
-#define LED_YELLOW_2_Pin GPIO_PIN_6
-#define LED_YELLOW_2_GPIO_Port GPIOA
-#define LED_GREEN_2_Pin GPIO_PIN_7
-#define LED_GREEN_2_GPIO_Port GPIOA
+#define LED_0_Pin GPIO_PIN_0
+#define LED_0_GPIO_Port GPIOA
+#define LED_1_Pin GPIO_PIN_1
+#define LED_1_GPIO_Port GPIOA
+#define LED_2_Pin GPIO_PIN_2
+#define LED_2_GPIO_Port GPIOA
+#define LED_5_Pin GPIO_PIN_5
+#define LED_5_GPIO_Port GPIOA
+#define LED_6_Pin GPIO_PIN_6
+#define LED_6_GPIO_Port GPIOA
+#define LED_7_Pin GPIO_PIN_7
+#define LED_7_GPIO_Port GPIOA
 #define SEG_0_Pin GPIO_PIN_0
 #define SEG_0_GPIO_Port GPIOB
 #define SEG_1_Pin GPIO_PIN_1
@@ -83,6 +84,8 @@ void Error_Handler(void);
 #define SEG_12_GPIO_Port GPIOB
 #define SEG_13_Pin GPIO_PIN_13
 #define SEG_13_GPIO_Port GPIOB
+#define LED_9_Pin GPIO_PIN_14
+#define LED_9_GPIO_Port GPIOA
 #define SEG_3_Pin GPIO_PIN_3
 #define SEG_3_GPIO_Port GPIOB
 #define SEG_4_Pin GPIO_PIN_4
@@ -106,3 +109,5 @@ void Error_Handler(void);
 #endif
 
 #endif /* __MAIN_H */
+
+/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

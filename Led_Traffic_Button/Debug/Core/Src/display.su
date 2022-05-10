@@ -1,0 +1,11 @@
+display.c:10:6:clearAll	8	static
+display.c:17:6:display7SEG	16	static
+display.c:64:6:display7SEG1	16	static
+display.c:114:6:updateTrafficBuffer	16	static
+display.c:137:6:update7SEG1	16	static
+display.c:152:6:update7SEG2	16	static
+display.c:167:6:display_Traffic_mode1	8	static
+display.c:291:6:display_Traffic_mode2	8	static
+display.c:320:6:display_Traffic_mode3	8	static
+display.c:349:6:display_Traffic_mode4	8	static
+display.c:377:6:display_Traffic	8	static

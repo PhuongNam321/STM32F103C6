@@ -1,0 +1,2 @@
+timer.c:12:6:setTimer0	16	static
+timer.c:16:6:timer_run	4	static

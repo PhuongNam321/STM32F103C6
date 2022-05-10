@@ -1,0 +1,3 @@
+command_parser_fsm.c:18:6:HAL_UART_RxCpltCallback	16	static
+command_parser_fsm.c:31:5:extractCommand	56	static
+command_parser_fsm.c:53:6:command_parser_fsm	8	static
